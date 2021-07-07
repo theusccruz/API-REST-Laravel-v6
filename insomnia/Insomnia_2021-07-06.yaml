@@ -1,0 +1,298 @@
+_type: export
+__export_format: 4
+__export_date: 2021-07-07T02:35:06.304Z
+__export_source: insomnia.desktop.app:v2021.4.0
+resources:
+  - _id: req_fa9916fafb72486c8432d7498e7ca9ee
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625624981555
+    created: 1625624971712
+    url: "{{ _.baseUrl2 }}/api/app/users/1"
+    name: deleteUser
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625624971712
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_100a88a772474d7aa549900bb6c25ad7
+    parentId: wrk_6001ef221ef04ba8810b2d8774772135
+    modified: 1625624356630
+    created: 1625624356630
+    name: APILaravelv6
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1625624356630
+    _type: request_group
+  - _id: wrk_6001ef221ef04ba8810b2d8774772135
+    parentId: null
+    modified: 1620682674317
+    created: 1620682674317
+    name: Insomnia
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_1f54e7c346d84326867c23fefe610210
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625625092677
+    created: 1625625003482
+    url: "{{ _.baseUrl2 }}/api/app/jobs/2"
+    name: deleteJob
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625624898160
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_eebe12d1a4df44d8a6d46838331bcfab
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625624859910
+    created: 1625624824608
+    url: "{{ _.baseUrl2 }}/api/app/users/1"
+    name: updateUser
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {	
+        	"name": "Matheus Costa",
+        	"email": "teste@gmail.com",
+        	"password": "123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_39d2c25d8545487e9abfba1e8a5d5145
+    authentication: {}
+    metaSortKey: -1625624824608
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e210f4cf014f46f1a5efa5cae5e51737
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625624947753
+    created: 1625624886417
+    url: "{{ _.baseUrl2 }}/api/app/jobs/1"
+    name: updateJob
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "Node Developer Adonis Expert",
+          "description": "Adonis Expert",
+          "local": "São Paulo",
+          "remote": "no",
+          "user_id": 1  
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_39d2c25d8545487e9abfba1e8a5d5145
+    authentication: {}
+    metaSortKey: -1625624777708
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4d4aa2ffc39c4157b1cbce2565ca9da5
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625625057145
+    created: 1625624730808
+    url: "{{ _.baseUrl2 }}/api/app/jobs"
+    name: createJob
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "PHP Developer Laravel Expert",
+          "description": "Laravel Expert",
+          "local": "São Paulo",
+          "remote": "no",
+          "user_id": 3
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_26d6233bf9fe45968a0fcc2762261ec8
+    authentication: {}
+    metaSortKey: -1625624730808
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a457c3c90bbf41bfa2d5c5e13d7f7359
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625624683152
+    created: 1625624674791
+    url: "{{ _.baseUrl2 }}/api/app/users"
+    name: listUser
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625624674791
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1782b4c015cb4ac08542213e300bfb4b
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625624715879
+    created: 1625624700859
+    url: "{{ _.baseUrl2 }}/api/app/jobs"
+    name: listJobs
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1625624553329
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_33f534b2c9384002a82928e547d177e8
+    parentId: fld_100a88a772474d7aa549900bb6c25ad7
+    modified: 1625624529749
+    created: 1625624431867
+    url: "{{ _.baseUrl2 }}/api/app/users"
+    name: createUser
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Matheus",
+        	"email": "teste@gmail.com",
+        	"password": "123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c123be374ceb45ac9c33c68dbfadc3b7
+    authentication: {}
+    metaSortKey: -1625624431867
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_e050cd384541e9c84942d4e1d411a891facd64dd
+    parentId: wrk_6001ef221ef04ba8810b2d8774772135
+    modified: 1620682674360
+    created: 1620682674360
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1620682674360
+    _type: environment
+  - _id: jar_e050cd384541e9c84942d4e1d411a891facd64dd
+    parentId: wrk_6001ef221ef04ba8810b2d8774772135
+    modified: 1623986494349
+    created: 1620682674362
+    name: Default Jar
+    cookies:
+      - key: ASPSESSIONIDAEDRAQAD
+        value: BJMMAOKBOLEIADMNOOHDFMJH
+        domain: servicos.receita.fazenda.gov.br
+        path: /
+        secure: true
+        hostOnly: true
+        creation: 2021-06-18T00:04:47.806Z
+        lastAccessed: 2021-06-18T03:21:34.348Z
+        id: "9110722116378402"
+      - key: sto-id-47873
+        value: EMOHJEKBLLAB
+        domain: servicos.receita.fazenda.gov.br
+        path: /
+        hostOnly: true
+        creation: 2021-06-18T00:04:47.806Z
+        lastAccessed: 2021-06-18T00:04:47.806Z
+        id: "6023169457899342"
+    _type: cookie_jar
+  - _id: spc_983e31bbd71c45d0a08202475f354396
+    parentId: wrk_6001ef221ef04ba8810b2d8774772135
+    modified: 1620682674318
+    created: 1620682674318
+    fileName: Insomnia
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_7d272c8072194b08b6592b0499771b3d
+    parentId: env_e050cd384541e9c84942d4e1d411a891facd64dd
+    modified: 1625624448098
+    created: 1620817149194
+    name: dev
+    data:
+      baseUrl: http://localhost:3333
+      baseUrl2: http://localhost:8000
+      tokenUser: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjUwMjE4MjUsImV4cCI6MTYyNTA1NzgyNSwic3ViIjoiYjQ0MDAyYjQtM2YyNC00YzM4LTg3OGEtZmVlMTRkNWUyNTMzIn0.m6c-qk3zGhLKgwRtIIOhs52A3iCQ-7qhoUgfmJqg-54
+      tokenProvider: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjM4NDIwMTcsImV4cCI6MTYyMzg3ODAxNywic3ViIjoiY2NjOWQzZmItYTdiMy00ZTA5LThmODgtZTUwMDJjNGQ1OTlhIn0.7SbD3BFvJ9vHoHr006kuEu8Vd8TsMddyjX-BuLF-lVA
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+        - baseUrl2
+        - tokenUser
+        - tokenProvider
+    color: "#00b0bd"
+    isPrivate: false
+    metaSortKey: 1620817149194
+    _type: environment
